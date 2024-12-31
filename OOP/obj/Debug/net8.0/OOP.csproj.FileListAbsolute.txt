@@ -12,3 +12,4 @@ C:\Users\diego.fernandes\Documents\Curso Csharp\OOP\OOP\obj\Debug\net8.0\refint\
 C:\Users\diego.fernandes\Documents\Curso Csharp\OOP\OOP\obj\Debug\net8.0\OOP.pdb
 C:\Users\diego.fernandes\Documents\Curso Csharp\OOP\OOP\obj\Debug\net8.0\OOP.genruntimeconfig.cache
 C:\Users\diego.fernandes\Documents\Curso Csharp\OOP\OOP\obj\Debug\net8.0\ref\OOP.dll
+C:\Users\diego.fernandes\Documents\Curso Csharp\OOP\OOP\obj\Debug\net8.0\OOP.sourcelink.json

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace OOP
 {
-    public class Conta
+    public abstract class Conta : IConta
     {
 
         public Conta(int numero, double limite) // Método construtor para instanciar a classe que sempre vai solicitar numero da conta e limite
@@ -16,7 +16,7 @@ namespace OOP
         }
 
         //propiedades da classe
-        private double Saldo { get; set ; } //get pode ser acessado //set pode setar uma informação ao saldo
+        protected double Saldo { get; set ; } //get pode ser acessado //set pode setar uma informação ao saldo
         public double Limite { get; private set; } 
         public double Numero { get; private set; } 
         public static int TotalDeContasCriadas { get; set; }
@@ -31,7 +31,7 @@ namespace OOP
             this.Saldo += valor;
         }
 
-        public bool Saca(double valor)
+        public virtual bool Saca(double valor)
         {
             double saldoDisponivel = this.ConsultaSaldoDisponivel();
 
