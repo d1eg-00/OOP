@@ -152,21 +152,33 @@ namespace OOP
 #region Interface
 
 
-            ContaPoupanca contaPoupanca = new ContaPoupanca(111, 0);
-            contaPoupanca.Deposita(100);
-            contaPoupanca.Saca(10);
+            // ContaPoupanca contaPoupanca = new ContaPoupanca(111, 0);
+            // contaPoupanca.Deposita(100);
+            // contaPoupanca.Saca(10);
 
-            double saldoPoupanca = contaPoupanca.ConsultaSaldoDisponivel();
-            Console.WriteLine($@"SALDO Conta Poupança: {saldoPoupanca}");
+            // double saldoPoupanca = contaPoupanca.ConsultaSaldoDisponivel();
+            // Console.WriteLine($@"SALDO Conta Poupança: {saldoPoupanca}");
 
-            Console.WriteLine("======================");
+            // Console.WriteLine("======================");
 
-            ContaCorrente contaCorrente = new ContaCorrente(111, 0);
-            contaCorrente.Deposita(100);
-            contaCorrente.Saca(20);
+            // ContaCorrente contaCorrente = new ContaCorrente(111, 0);
+            // contaCorrente.Deposita(100);
+            // contaCorrente.Saca(20);
 
-            double saldoContaCorrente = contaCorrente.ConsultaSaldoDisponivel();
-            Console.WriteLine($@"SALDO Conta Corrente: {saldoContaCorrente}");
+            // double saldoContaCorrente = contaCorrente.ConsultaSaldoDisponivel();
+            // Console.WriteLine($@"SALDO Conta Corrente: {saldoContaCorrente}");
+
+#endregion
+
+#region Encapsulamento
+
+            AnalistaDeTI analistaDeTI = new AnalistaDeTI();
+            analistaDeTI.AdicionarNome ("Diego", "Fernandes");
+            analistaDeTI.AdicionarSalarioPadrao(5000);
+
+            analistaDeTI.Reajustar();
+
+            Console.WriteLine($@"Salário do Analista de TI Reajustado: {analistaDeTI.Salario}");
 
 #endregion
             Console.ReadKey();
